@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~ngx-toastr/toastr';
+
+html, body { height: 100%; }
+:root {
+  --primary: #6772e5;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.bg-custom {
+  background-color: var(--primary)!important;
+}
+
+.mat-ink-bar {
+  background-color: var(--primary)!important;
+}
+.bg-f3 {
+  background-color: #f3f3f3!important;
+}
+.pr-0 {
+  padding-right: 0!important;
+}
+.pl-0 {
+  padding-left: 0!important;
+}
+.btn-outline-primary {
+  color: var(--primary)!important;
+  border-color: var(--primary)!important;
+}
+
+.star {
+  font-size: x-large;
+  width: 50px;
+  display: inline-block;
+  color: gray;
+}
+.star:last-child {
+  margin-right: 0;
+}
+.star:before {
+  content:'\2605';
+}
+.star.on {
+  color: gold;
+}
+.star.half:after {
+  content:'\2605';
+  color: gold;
+  position: absolute;
+  margin-left: -20px;
+  width: 10px;
+  overflow: hidden;
+}
+.color-white {
+  color: #ffffff!important;
+}
